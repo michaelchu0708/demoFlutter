@@ -1,3 +1,4 @@
+import 'package:demoapp/widget/iconbutton.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -30,6 +31,8 @@ class Home extends HookConsumerWidget {
                 labelText: 'What needs to be done?',
               ),
               onSubmitted: (value) {
+                ref.read(countProvider.notifier).addCount();
+                print(countProvider);
                 ref.read(todoListProvider.notifier).add(value);
                 newTodoController.clear();
               },
@@ -52,6 +55,8 @@ class Home extends HookConsumerWidget {
                 ),
               )
             ],
+            SizedBox(height: 10),
+            IconButtonCounter(ref),
           ],
         ),
       ),

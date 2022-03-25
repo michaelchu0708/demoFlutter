@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:demoapp/notifier/counter.dart';
 import 'package:demoapp/widget/iconbutton.dart';
+import 'package:demoapp/main.dart';
 
 /// We are using [StateNotifierProvider] here for a very simple logic (state++)
 //* We should be using it [StateNotifierProvider] to handle advnace business logic,
@@ -16,7 +16,7 @@ class CounterHome extends HookConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     void click() {
       ref.read(countProvider.notifier).addCount();
-      print(ref.watch(countProvider).toString());
+      print(countProvider);
     }
 
     return GestureDetector(

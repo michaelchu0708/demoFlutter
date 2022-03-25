@@ -32,6 +32,7 @@ final todoListProvider = StateNotifierProvider<TodoList, List<Todo>>((ref) {
 
 final countProvider =
     StateNotifierProvider<CounterRiverpod, int>((ref) => CounterRiverpod());
+
 final todoListFilter = StateProvider((_) => TodoListFilter.all);
 final uncompletedTodosCount = Provider<int>((ref) {
   return ref.watch(todoListProvider).where((todo) => !todo.completed).length;
@@ -51,7 +52,7 @@ final filteredTodos = Provider<List<Todo>>((ref) {
 });
 final currentTodo = Provider<Todo>((ref) => throw UnimplementedError());
 void main() {
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -59,6 +60,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(countProvider);
     return const MaterialApp(
       home: MyHomePage(
         title: 'Demo App',
