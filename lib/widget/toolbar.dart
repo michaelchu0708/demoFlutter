@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:todos/main.dart';
+import 'package:demoapp/main.dart';
 
 class Toolbar extends HookConsumerWidget {
   const Toolbar({

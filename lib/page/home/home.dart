@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:todos/page/counter/counter.dart';
-import 'package:todos/page/todolist/home.dart';
+import 'package:demoapp/page/counter/counter.dart';
+import 'package:demoapp/page/todolist/home.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);

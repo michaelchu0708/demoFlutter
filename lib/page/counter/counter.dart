@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:todos/notifier/counter.dart';
-import 'package:todos/widget/iconbutton.dart';
+import 'package:demoapp/notifier/counter.dart';
+import 'package:demoapp/widget/iconbutton.dart';
 
 /// We are using [StateNotifierProvider] here for a very simple logic (state++)
 //* We should be using it [StateNotifierProvider] to handle advnace business logic,

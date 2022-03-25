@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:todos/notifier/counter.dart';
+import 'package:demoapp/notifier/counter.dart';
 
 class IconButtonCounter extends StatelessWidget {
   get borderRadius => BorderRadius.circular(8.0);

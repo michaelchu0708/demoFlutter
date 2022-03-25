@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import '../../notifier/todo.dart';
-import 'package:todos/main.dart';
+import 'package:demoapp/main.dart';
 
 class TodoItem extends HookConsumerWidget {
   const TodoItem({Key? key}) : super(key: key);

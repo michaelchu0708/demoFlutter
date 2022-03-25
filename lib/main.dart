@@ -3,10 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:todos/page/counter/counter.dart';
-import 'package:todos/page/home/home.dart';
-import 'package:todos/page/todolist/home.dart';
-import 'package:todos/widget/iconbutton.dart';
+import 'package:demoapp/page/counter/counter.dart';
+import 'package:demoapp/page/home/home.dart';
+import 'package:demoapp/page/todolist/home.dart';
+import 'package:demoapp/widget/iconbutton.dart';
 import 'notifier/counter.dart';
 import 'notifier/todo.dart';
 

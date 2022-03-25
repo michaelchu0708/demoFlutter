@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:todos/notifier/todo.dart';
-import 'package:todos/page/todolist/todoitem.dart';
-import 'package:todos/widget/toolbar.dart';
-import 'package:todos/widget/title.dart';
+import 'package:demoapp/notifier/todo.dart';
+import 'package:demoapp/page/todolist/todoitem.dart';
+import 'package:demoapp/widget/toolbar.dart';
+import 'package:demoapp/widget/title.dart';
 
 import '../../main.dart';
 
